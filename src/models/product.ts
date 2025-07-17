@@ -21,4 +21,10 @@ export class Product {
     this.discountPercentage = discountPercentage;
     this.category = category;
   }
+
+  //Calculates and returns the price after applying discount
+
+  getPriceWithDiscount(): number {
+    return this.price * (1 - this.discountPercentage / 100);
+  }
 }
