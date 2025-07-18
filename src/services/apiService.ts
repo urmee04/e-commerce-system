@@ -24,5 +24,6 @@ export async function fetchProductData(): Promise<any[]> {
   } catch (error) {
     //log any errors that occur during the fetch or parsing
     console.error("Fetch error:", error);
+    return [];
   }
 }
