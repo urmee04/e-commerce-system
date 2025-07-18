@@ -1,3 +1,5 @@
+import { calculateTax } from "../utils/taxCalculator";
+
 export class Product {
   id: number;
   title: string;
@@ -26,6 +28,16 @@ export class Product {
 
   getPriceWithDiscount(): number {
     return this.price * (1 - this.discountPercentage / 100);
+  }
+
+  // calculate tax amount using utility function
+  getTaxAmount(): number {
+    return calculateTax(this.price, this.category);
+  }
+
+  //calculates final price after discount and tax
+  getFinalPrice(): number {
+    return this.getPriceWithDiscount() + this.getTaxAmount();
   }
 
   //Display product's details in formatted string
