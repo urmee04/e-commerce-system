@@ -77,6 +77,7 @@ node main.js
 **How you implemented TypeScript features and OOP principles?**
 
 I applied TypeScript and OOP principles to build an E-commerce Product Management System. I structured the application using a Product class to encapsulate all product-related data and behaviors, such as calculating discounted prices, computing tax based on product category, and formatting the product's display details. By modularizing logic into separate files and using custom utility functions like calculateDiscount and calculateTax, I was able to keep the code clean and maintainable.
+
 **The challenges you encountered and how you overcame them?**
 
 One of the key challenges was accurately implementing category-specific tax rules, particularly ensuring groceries were taxed differently from other items. Another hurdle involved validating the API response structure before mapping raw data to class instances. This required careful checks to avoid runtime errors and ensure all data was handled safely and predictably. Additionally, transforming plain JSON objects into fully functional class instances provided a real-world use case for working with typed object models in TypeScript.
