@@ -43,7 +43,7 @@ export class Product {
   //Display product's details in formatted string
 
   displayDetails(): string {
-    return `Id: ${this.id}
+    return `ID: ${this.id}
     Title: ${this.title}
     Price: $${this.price.toFixed(2)}
     Discount: ${this.discountPercentage}%
